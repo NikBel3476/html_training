@@ -183,7 +183,10 @@ a {
 }
 
 #section-footer .section-container {
-    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
 }
 
 #footer-title {
@@ -191,6 +194,7 @@ a {
 }
 
 #ref-to-top {
+    margin-top: 50px;
     color: var(--main-color-text);
     font-weight: 600;
 }
