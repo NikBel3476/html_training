@@ -1,0 +1,241 @@
+@import 'res/fonts/Montserrat/index.css';
+
+:root {
+    --font-fallback: system-ui, sans-serif;
+    --main-color-background: #2d2d2d;
+    --main-color-text: #fff;
+    --secondary-color-text: rgb(255, 194, 60);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100vw;
+    font-family: Montserrat, var(--font-fallback);
+    background: var(--main-color-background);
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    color: var(--main-color-text);
+}
+
+.phone-number {
+    font-weight: 600;
+    color: var(--main-color-text);
+}
+
+#section-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-family: inherit;
+    background: url(res/images/img1.jpg) center / cover no-repeat scroll transparent;
+}
+
+#section-title h1 {
+    margin-bottom: 200px;
+}
+
+#main-title {
+    font-size: 3em;
+    color: var(--main-color-text);
+    text-shadow:1px 1px 1px black; 
+    animation: onload 1s ease;
+}
+
+#call-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-phone-container {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d2d2d;
+  padding: 0 40px;
+  border-radius: 10px;
+  border: 1px solid rgb(63, 63, 63);
+}
+
+.phone-input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+.call-form__button {
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #2d2d2d;
+    outline: none;
+    color: var(--main-color-text);
+    border-radius: 10px;
+    border: 1px solid rgb(63, 63, 63);
+    font-weight: 600;
+}
+
+#section-advantages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+#section-advantages h2 {
+    margin-bottom: 20px;
+    color: var(--main-color-text);
+}
+
+#advantages-list {
+    list-style-type: none;
+    color: var(--main-color-text);
+}
+
+#advantages-list > li {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+#advantages-list :last-child {
+    margin-bottom: 0;
+}
+
+#section-types {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+    background: url(res/images/img2.jpg) center / cover no-repeat fixed transparent;
+    text-shadow: 1px 1px 1px black;
+}
+
+#section-types h2 {
+    margin-bottom: 40px;
+    color: var(--main-color-text);
+}
+
+#section-types div {
+    margin-bottom: 50px;
+}
+
+#section-types :last-child {
+    margin-bottom: 0;
+}
+
+#types-title {
+    text-align: center;
+}
+
+.type-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color-text);
+    font-weight: 600;
+}
+
+.type-card :first-child {
+    margin-bottom: 10px;
+}
+
+.type-card__img {
+    max-width: 260px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+#section-footer {
+    padding: 30px 20px;
+}
+
+#section-footer .section-container {
+    margin-bottom: 50px;
+}
+
+#footer-title {
+    color: var(--main-color-text);
+}
+
+#ref-to-top {
+    color: var(--main-color-text);
+    font-weight: 600;
+}
+
+.scroll-animation-wrapper {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.scroll-animation-wrapper-transition {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes onload {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #section-title {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #main-title {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .call-form__button {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #section-title {
+        padding: 30px 10px;
+    }
+}
