@@ -14,13 +14,37 @@
 }
 
 html, body {
-    width: 100vw;
+    width: 100%;
     font-family: Montserrat, var(--font-fallback);
     background: var(--main-color-background);
 }
 
 a {
     text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.text-standard {
+    color: var(--main-color-text);
+    font-weight: 400;
+}
+
+#image-view {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(6px);
+    z-index: -5;
+    transition: ease 1s z-index;
 }
 
 .section-container {
@@ -119,7 +143,7 @@ a {
 }
 
 #advantages-list {
-    list-style-type: none;
+    list-style-position: inside;
     color: var(--main-color-text);
 }
 
@@ -138,7 +162,7 @@ a {
     justify-content: center;
     align-items: center;
     padding: 30px 10px;
-    background: url(res/images/img2.jpg) center / cover no-repeat fixed transparent;
+    background: url(res/images/canopy_terrace.jpg) center / cover no-repeat fixed transparent;
     text-shadow: 1px 1px 1px black;
 }
 
@@ -155,10 +179,6 @@ a {
     margin-bottom: 0;
 }
 
-#types-title {
-    text-align: center;
-}
-
 .type-card {
     display: flex;
     flex-direction: column;
@@ -168,14 +188,33 @@ a {
     font-weight: 600;
 }
 
-.type-card :first-child {
+.type-card > span:first-of-type {
     margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.type-card__img__wrapper {
+    width: 100%;
+    /* aspect-ratio: 1 / 1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .type-card__img {
-    max-width: 260px;
+    /* max-width: 260px; */
+    width: 100%;
     background-color: #fff;
     border-radius: 20px;
+}
+
+#section-description {
+    padding: 30px 10px;
+}
+
+#section-description .text-standard {
+    display: block;
+    margin-bottom: 20px;
 }
 
 #section-footer {

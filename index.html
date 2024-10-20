@@ -10,7 +10,7 @@
 </head>
 <body>
     <header id="header">
-       <nav class="navigation">
+       <nav class="navigation" style="visibility: hidden">
             <span>Меню</span>
        </nav>
        <span class="phone-number">
@@ -33,52 +33,65 @@
     <section id="section-advantages">
         <div class="section-container">
             <h2>Преимущества</h2>
-            <ul id="advantages-list">
+            <ol id="advantages-list">
                 <li>
-                    <span>Преимущество 1</span>
+                    <span>Качество в соотвествии с СП 16.13330.2017</span>
                 </li>
                 <li>
-                    <span>Преимущество 2</span>
+                    <span>Гарантия 24 месяца</span>
                 </li>
                 <li>
-                    <span>Преимущество 3</span>
+                    <span>Типовые готовые проекты</span>
+                </li>
+                <li>
+                    <span>Индивидуальное проектирование</span>
                 </li>
             </ul>
         </div>
     </section>
     <section id="section-types">
         <div class="section-container">
-            <h2 id="types-title">Каталог</h2>
+            <h2>Каталог</h2>
             <div class="type-card">
-                <span>Навес 1</span>
-                <div class="scroll-animation-wrapper scroll-animation-wrapper-transition">
-                    <img class="type-card__img" src="res/images/placeholder.png">
+                <span>Для автомобилей</span>
+                <div class="type-card__img__wrapper scroll-animation-wrapper scroll-animation-wrapper-transition">
+                    <img class="type-card__img" src="res/images/canopy_vehicle.jpg">
                 </div>
             </div>
             <div class="type-card">
-                <span>Навес 2</span>
-                <div class="scroll-animation-wrapper scroll-animation-wrapper-transition">
-                    <img class="type-card__img" src="res/images/placeholder.png">
+                <span>Для террасы</span>
+                <div class="type-card__img__wrapper scroll-animation-wrapper scroll-animation-wrapper-transition">
+                    <img class="type-card__img" src="res/images/canopy_terrace.jpg">
                 </div>
             </div>
             <div class="type-card">
-                <span>Навес 3</span>
-                <div class="scroll-animation-wrapper scroll-animation-wrapper-transition">
-                    <img class="type-card__img" src="res/images/placeholder.png">
+                <span>Для зоны отдыха</span>
+                <div class="type-card__img__wrapper scroll-animation-wrapper scroll-animation-wrapper-transition">
+                    <img class="type-card__img" src="res/images/canopy_rest_zone.jpg">
                 </div>
             </div>
-            <div class="type-card">
-                <span>Навес 4</span>
-                <div class="scroll-animation-wrapper scroll-animation-wrapper-transition">
-                    <img class="type-card__img" src="res/images/placeholder.png">
-                </div>
-            </div>
-            <div class="type-card">
-                <span>Навес 5</span>
-                <div class="scroll-animation-wrapper scroll-animation-wrapper-transition">
-                    <img class="type-card__img" src="res/images/placeholder.png">
-                </div>
-            </div>
+        </div>
+    </section>
+    <section id="section-description">
+        <div class="section-container">
+            <span class="text-standard">
+                Навесы хай-тек — новая, нестандартная конструкция, созданная с использованием
+                современных технологий и путем комбинации разных материалов. Для сооружения
+                характерна четкая геометрия, лаконичность и монолитность.
+            </span>
+            <span class="text-standard">
+                Смотрится оригинально, отлично защищает машину или другое имущество от снега,
+                дождя, града, жаркого солнца. Здесь можно создать уютную зону отдыха с мангалом,
+                качелями и большим столом, оставить для хранения садовую технику.
+            </span>
+            <span class="text-standard">
+                Преимущества навесов хай-тек:
+                <br>
+                Эксклюзивный внешний вид. Такая конструкция выгодно выделяется на фоне типовой архитектуры.
+                Большая вариативность исполнения. Навесы можно сделать с односкатной, плоской кровлей, поставить на отдельные опоры или пристроить к рядом стоящему зданию.
+                В каркас под кровлю может быть встроена внутренняя подсветка — светодиодные лампы. Это упростит обслуживание машины в темное время суток, сделает перемещение по закрытой территории более безопасным ночью и в сумерках.
+                Боковые стены навеса хай-тек можно частично обшить для лучшей защиты от ветра, дождя, снеговых заносов. Для обшивки стен используется планкен лиственницы, деревянные и металлические панели, доски из ДПК и другие материалы.
+            </span>
         </div>
     </section>
     <section id="section-footer">
@@ -88,6 +101,8 @@
             <a id="ref-to-top" href="#top">Вернуться в начало</a>
         </div>
     </section>
+    
+    <div id="image-view"></div>
 </body>
 <script src="index.js"></script>
 </html>
